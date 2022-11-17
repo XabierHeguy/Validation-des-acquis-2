@@ -1,0 +1,24 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+
+<head>
+</head>
+<body>
+
+	<h1>Supprimer un livre</h1>
+
+	<h:form>
+	 	<p>Titre : <h:inputText id="name" value="#{livre.titre}" /></p>
+		<p>Auteur : <h:inputText id="auteur" value="#{livre.auteur}" /></p>
+		<p>Date : <h:inputText id="date" value="#{livre.date}" /></p>
+		<p>Prix : <h:inputText id="prix" value="#{livre.prix}" /></p>
+		<h:commandButton value="Enregistrer" action="#{livre.add()}" />
+	</h:form>
+	
+	 <br></br>
+	<p><a href="index.xhtml" target="_blank">Retour à l'index</a> </p>
+</body>
+</html>

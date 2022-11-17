@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:c="http://java.sun.com/jstl/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+
+<head>
+</head>
+<body>
+
+	<h1>Livres de la bibliothèque</h1>
+
+
+ <!--  	<c:forEach items="#{daolivres.listelivres}" var="livre">
+		Titre : #{livre.titre}, auteur : #{livre.auteur}, date : #{livre.date}, prix : #{livre.prix}
+	</c:forEach>
+-->
+		<ul>
+			<li>Titre : ${livre.toString()}</li>
+			<li>Auteur : ${unlivre.auteur}</li>
+			<li>Date : ${unlivre.date}</li>
+			<li>Prix : ${unlivre.prix}</li>
+		</ul>
+
+	<br></br>
+	<p><a href="index.xhtml" target="_blank">Retour à l'index</a> </p>
+</body>
+</html>
